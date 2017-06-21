@@ -1,1 +1,8 @@
-checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/nnsantosh/HelloWorld.git']]])
+node{
+  stage('Clone sources') {
+        git url: 'https://github.com/nnsantosh/HelloWorld.git'
+    }
+  stage('build'){
+    echo "Build successful"
+  }
+}
