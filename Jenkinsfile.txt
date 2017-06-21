@@ -1,7 +1,4 @@
 node{
-  stage('Clone sources') {
-        git url: 'https://github.com/nnsantosh/HelloWorld.git'
-    }
   stage('build'){
     echo "Build successful"
   }
